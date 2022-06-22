@@ -1,0 +1,205 @@
+#form-group {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1px 75px;
+    border: 2px solid black;
+    background-color: brown;
+    border-radius: 850px;
+    color: white;
+    margin: 20px 167px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: 105px ;
+    
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#input-tag-div input {
+    border-radius: 42px;
+    margin: 12px 110px;
+    padding: 18px 10px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+/* #form-age
+{   background-color:rgb(110, 177, 228);
+    border: 2px solid aqua;
+    border-radius: 16px;
+    padding: 40px 50px;
+} */
+
+.age-input-div
+{
+    /* background-color:rgb(110, 177, 228); */
+    /* border: 2px solid aqua; */
+    border-radius: 16px;
+    padding: 40px 50px;
+    margin: -105px 77px;
+} 
+#display18321
+{
+    background: url('investing.jpg') center center no-repeat;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -378px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218); 
+}
+#display18322
+{
+    background: url('investing.jpg') center center no-repeat;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -378px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218); 
+}
+#display18323
+{
+    background: url('investing.jpg') center center no-repeat;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -378px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218); 
+}
+#display18324
+{
+    background: url('investing.jpg') center center no-repeat;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -378px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218); 
+}
+#display33451
+{
+    background: url('inesting2.png') center center no-repeat;
+    width: 100%;
+    height: 997px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -850px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218) ;
+    color: aliceblue;
+   
+}
+#display33451 ul
+{
+    color:antiquewhite;
+}
+
+#display33452
+{
+    background: url('inesting2.png') center center no-repeat;
+    width: 100%;
+    height: 997px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -850px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218) ;
+    color: aliceblue;
+   
+}
+#display33452 ul
+{
+    color:antiquewhite;
+}
+
+#display33453
+{
+    background: url('inesting2.png') center center no-repeat;
+    width: 100%;
+    height: 997px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -850px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218) ;
+    color: aliceblue;
+   
+}
+#display33453 ul
+{
+    color:antiquewhite;
+}
+
+#display33454
+{
+    background: url('inesting2.png') center center no-repeat;
+    width: 100%;
+    height: 997px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -850px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218) ;
+    color: aliceblue;
+   
+}
+#display33454 ul
+{
+    color:antiquewhite;
+}
+#display4660
+{
+    background: url('invesing3.png') center center no-repeat;
+    width: 100%;
+    height: 1260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: -1250px ;
+    font-size: 4rem;
+    color: rgb(76, 76, 218) ;
+}
+#display4660 ul
+{
+    color:antiquewhite;
+}

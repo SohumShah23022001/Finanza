@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">    
+
+    <script>
+        function initial() {
+            document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "collapse";
+            document.getElementById("display18323").style.visibility = "collapse";
+            document.getElementById("display18324").style.visibility = "collapse";
+            document.getElementById("display33451").style.visibility = "collapse";
+            document.getElementById("display33452").style.visibility = "collapse";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+        }
+        function myfunction(age,income,loan) {
+            console.log("here" + age);
+            if(age < 18 || age > 60) {
+                console.log("123");
+                alert("Please enter an age between 18-60 years old.")
+                return;
+            }
+            else {
+                document.getElementById("headder").innerHTML = "Based on your Details, you should invest in the following:";
+                document.getElementById("innerdiv").style.visibility = "collapse";
+                if(age >= 18 && age < 33) {
+                    if (income<=15000 && loan<=15000 ){
+                    document.getElementById("display18321").style.visibility = "visible";
+                    }
+                    else if (income<=15000 && loan<=25000){
+                        document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "visible";
+            document.getElementById("display18323").style.visibility = "collapse";
+            document.getElementById("display18324").style.visibility = "collapse";
+            document.getElementById("display33451").style.visibility = "collapse";
+            document.getElementById("display33452").style.visibility = "collapse";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+                    }
+                    
+                    else if (income>15000 && loan<=25000){
+                        document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "collapse";
+            document.getElementById("display18323").style.visibility = "visible";
+            document.getElementById("display18324").style.visibility = "collapse";
+            document.getElementById("display33451").style.visibility = "collapse";
+            document.getElementById("display33452").style.visibility = "collapse";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+                    }
+                    
+                    else if (income>=15000 && loan>=25000){document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "collapse";
+            document.getElementById("display18323").style.visibility = "collapse";
+            document.getElementById("display18324").style.visibility = "visible";
+            document.getElementById("display33451").style.visibility = "collapse";
+            document.getElementById("display33452").style.visibility = "collapse";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+                    }
+                }
+                else if(age >= 33 && age < 46) {
+                    if (income<=15000 && loan<=15000 ){
+                        document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "collapse";
+            document.getElementById("display18323").style.visibility = "collapse";
+            document.getElementById("display18324").style.visibility = "collapse";
+            document.getElementById("display33451").style.visibility = "visible";
+            document.getElementById("display33452").style.visibility = "collapse";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";}
+                    else if (income<=15000 && loan<=25000){
+                        document.getElementById("display18321").style.visibility = "collapse";
+            document.getElementById("display18322").style.visibility = "collapse";
+            document.getElementById("display18323").style.visibility = "collapse";
+            document.getElementById("display18324").style.visibility = "collapse";
+            document.getElementById("display33451").style.visibility = "collapse";
+            document.getElementById("display33452").style.visibility = "visible";
+            document.getElementById("display33453").style.visibility = "collapse";
+            document.getElementById("display33454").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+                    }
+                    
+                    else if (income>=15000 && loan<=25000){
+                      //  document.getElementById("display18323").style.visibility = "collapse";
+                    document.getElementById("display33453").style.visibility = "visible";
+                    //document.getElementById("display4660").style.visibility = "collapse";
+                    }
+                    
+                    else if (income>=15000 && loan>=25000){
+                      //  document.getElementById("display18324").style.visibility = "collapse";
+                    document.getElementById("display33454").style.visibility = "visible";
+                    //document.getElementById("display4660").style.visibility = "collapse";
+                    }   
+                }
+                else if(age >= 46 && age < 61) {
+                    //document.getElementById("display1832").style.visibility = "collapse";
+                    //document.getElementById("display3345").style.visibility = "collapse";
+                    document.getElementById("display4660").style.visibility = "visible";
+                }
+
+            }
+            
+
+    }
+    </script>
+
+
+</head>
+<body onload="initial()">
+    <div id="form">
+        <form action="" id="form-age">
+            <div class="age-input-div">
+            <h1 id="headder">Enter your Details</h1>
+            <div id="innerdiv">
+                <div id="input-tag-div">
+                    <input type="number" name="age" id="age" placeholder="Enter Your Age">
+                </div>
+                
+                <div id="input-tag-div">
+                    <input type="number" name="age" id="income" placeholder="Enter Your Income">
+                </div>
+                
+                <div id="input-tag-div">
+                    <input type="number" name="age" id="loan" placeholder="Enter Your Loan">
+                </div>
+                <button type="button" class="btn" onclick="myfunction(document.getElementById('age').value , document.getElementById('income').value , document.getElementById('loan').value)">submit</button>
+            </div>
+        </div>
+            <div id="display18321">
+                <!-- Div to display output for 18-32 -->
+               <ul>
+                <li>Stocks-40%</li>
+               <li>Mutual Fund-20%</li>
+               <li>Crypto-30%</li>
+               <li>Startups-10%s</li>
+            </ul>
+            </div>
+            
+            <div id="display18322">
+                <!-- Div to display output for 18-32 -->
+               <ul>
+                <li>Stocks-60%</li>
+               <li>Mutual Fund-10%</li>
+               <li>Crypto-10%</li>
+               <li>Startups-20%s</li>
+            </ul>
+            </div>
+            
+            <div id="display18323">
+                <!-- Div to display output for 18-32 -->
+               <ul>
+                <li>Stocks-50%</li>
+               <li>Mutual Fund-20%</li>
+               <li>Crypto-20%</li>
+               <li>Startups-10%s</li>
+            </ul>
+            </div>
+            
+            <div id="display18324">
+                <!-- Div to display output for 18-32 -->
+               <ul>
+                <li>Stocks-40%</li>
+               <li>Mutual Fund-20%</li>
+               <li>Crypto-20%</li>
+               <li>Startups-20%s</li>
+            </ul>
+            </div>
+            <div id="display33451">
+                <!-- Div to display output for 33-45 -->
+                <ul>
+                    <li>Fixed-Deposits-40%</li>
+                    <li>Stocks-20%</li>
+                   <li>Mutual Fund-40%</li>
+                </ul>
+            </div>
+            
+            <div id="display33452">
+                <!-- Div to display output for 33-45 -->
+                <ul>
+                    <li>Fixed-Deposits-30%</li>
+                    <li>Stocks-20%</li>
+                   <li>Mutual Fund-50%</li>
+                </ul>
+            </div>
+            
+            <div id="display33453">
+                <!-- Div to display output for 33-45 -->
+                <ul>
+                    <li>Fixed-Deposits-50%</li>
+                    <li>Stocks-10%</li>
+                   <li>Mutual Fund-40%</li>
+                </ul>
+            </div>
+            
+            <div id="display33454">
+                <!-- Div to display output for 33-45 -->
+                <ul>
+                    <li>Fixed-Deposits-50%</li>
+                    <li>Stocks-5%</li>
+                   <li>Mutual Fund-45%</li>
+                </ul>
+            </div>
+            <div id="display4660">
+                <!-- Div to display output for 46-60 -->
+                <ul>
+                    <li>Fixed-Deposits-90%</li>
+                    <li>Stocks-5%</li>
+                   <li>Mutual Fund-5%</li>
+
+                </ul>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>

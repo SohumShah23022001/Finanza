@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">    
+
+    <script>
+        function initial() {
+            document.getElementById("display1832").style.visibility = "collapse";
+            document.getElementById("display3345").style.visibility = "collapse";
+            document.getElementById("display4660").style.visibility = "collapse";
+        }
+        function myfunction(age) {
+            console.log("here" + age);
+            if(age < 18 || age > 60) {
+                console.log("123");
+                alert("Please enter an age between 18-60 years old.")
+                return;
+            }
+            else {
+                document.getElementById("headder").innerHTML = "Based on your age, you should invest in the following:";
+                document.getElementById("innerdiv").style.visibility = "collapse";
+                if(age >= 18 && age < 33) {
+                    document.getElementById("display1832").style.visibility = "visible";
+                    document.getElementById("display3345").style.visibility = "collapse";
+                    document.getElementById("display4660").style.visibility = "collapse";
+                }
+                else if(age >= 33 && age < 46) {
+                    document.getElementById("display1832").style.visibility = "collapse";
+                    document.getElementById("display3345").style.visibility = "visible";
+                    document.getElementById("display4660").style.visibility = "collapse";
+                }
+                else if(age >= 46 && age < 61) {
+                    document.getElementById("display1832").style.visibility = "collapse";
+                    document.getElementById("display3345").style.visibility = "collapse";
+                    document.getElementById("display4660").style.visibility = "visible";
+                }
+
+            }
+            
+
+    }
+    </script>
+
+
+</head>
+<body onload="initial()">
+    <div id="form">
+        <form action="" id="form-age">
+            <div class="age-input-div">
+            <h1 id="headder">Enter your age</h1>
+            <div id="innerdiv">
+                <div id="input-tag-div">
+                    <input type="number" name="age" id="age" placeholder="Enter Your Age">
+                </div>
+                <button type="button" class="btn" onclick="myfunction(document.getElementById('age').value)">submit</button>
+            </div>
+        </div>
+            <div id="display1832">
+                <!-- Div to display output for 18-32 -->
+               <ul>
+                <li>Stocks-50%</li>
+               <li>Mutual Fund-20%</li>
+               <li>Crypto-20%</li>
+               <li>Startups-10%s</li>
+            </ul>
+            </div>
+            <div id="display3345">
+                <!-- Div to display output for 33-45 -->
+                <ul>
+                    <li>Fixed-Deposits-50%</li>
+                    <li>Stocks-10%</li>
+                   <li>Mutual Fund-40%</li>
+                </ul>
+            </div>
+            <div id="display4660">
+                <!-- Div to display output for 46-60 -->
+                <ul>
+                    <li>Fixed-Deposits-90%</li>
+                    <li>Stocks-5%</li>
+                   <li>Mutual Fund-5%</li>
+
+                </ul>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>

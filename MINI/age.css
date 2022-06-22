@@ -1,0 +1,33 @@
+.h-primary {
+    font-size: 4rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#form {
+    position: relative;
+    margin-top: 315px;
+}
+
+
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#box form {
+    width: 40%;
+}
+
+#box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 11.5px;
+}
